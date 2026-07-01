@@ -3,58 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Scentale</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-background:#0f0f0f;
+background:linear-gradient(180deg,#111,#1b1b1b);
 color:white;
-font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:32px;
+}
+
+.container{
+max-width:760px;
 text-align:center;
-padding:80px 20px;
 }
 
 h1{
-font-size:56px;
+font-size:72px;
+font-weight:700;
+letter-spacing:2px;
 color:#D4AF37;
+margin-bottom:18px;
 }
 
-p{
+.tagline{
+font-size:26px;
+opacity:.95;
+margin-bottom:28px;
+}
+
+.description{
 font-size:20px;
-max-width:700px;
-margin:auto;
 line-height:1.8;
+opacity:.8;
+margin-bottom:48px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:18px;
+flex-wrap:wrap;
 }
 
 .button{
-display:inline-block;
-margin-top:40px;
-padding:14px 28px;
-background:#D4AF37;
-color:black;
-text-decoration:none;
+padding:15px 34px;
 border-radius:999px;
-font-weight:bold;
+text-decoration:none;
+font-weight:600;
+transition:.25s;
 }
+
+.primary{
+background:#D4AF37;
+color:#111;
+}
+
+.primary:hover{
+transform:translateY(-2px);
+}
+
+.secondary{
+border:1px solid rgba(255,255,255,.25);
+color:white;
+}
+
+.secondary:hover{
+background:rgba(255,255,255,.08);
+}
+
+.footer{
+margin-top:70px;
+font-size:14px;
+opacity:.45;
+}
+
 </style>
+
 </head>
 
 <body>
 
+<div class="container">
+
 <h1>Scentale</h1>
 
-<p>
+<p class="tagline">
 Every Scent Tells a Story.
 </p>
 
-<p>
-Discover fragrances that match your mood, weather,
-occasion and personal style.
+<p class="description">
+Discover fragrances that perfectly match your mood,
+weather, occasion, and personal style.
+Explore celebrity-inspired perfumes, build your own collection,
+and uncover the stories behind every scent.
 </p>
 
-<a class="button" href="support.html">
-Support
-</a>
+<div class="buttons">
+<a class="button primary" href="support.html">Support</a>
+<a class="button secondary" href="privacy.html">Privacy Policy</a>
+</div>
+
+<div class="footer">
+© 2026 Scentale
+</div>
+
+</div>
 
 </body>
 </html>
